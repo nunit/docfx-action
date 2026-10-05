@@ -6,7 +6,9 @@
     "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^Dockerfile$"],
+      "managerFilePatterns": [
+    "/^Dockerfile$/"
+    ],
       "matchStrings": ["docfx --version (?<currentValue>.*?)\\n"],
       "depNameTemplate": "docfx",
       "datasourceTemplate": "nuget"
